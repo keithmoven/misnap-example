@@ -1,0 +1,48 @@
+
+<s:Envelope
+    xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><s:Header>
+<h:Metadata s:mustUnderstand="1" xmlns:h="http://miteksystems.com"
+xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><SessionReferenceId xmlns=
+"http://miteksystems.com/">135749c8-600d-4b26-9225-49d04ba09269
+</SessionReferenceId><TransactionReferenceId
+xmlns="http://miteksystems.com/">1000279724</TransactionReferenceId><XIPVersion
+xmlns="http://miteksystems.com/">2.2</XIPVersion></h:Metadata><o:Security
+s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"><u:Timestamp
+u:Id="_0"><u:Created>2016-09-23T15:40:26.153Z</u:Created><u:Expires>2016-09-23T15:45:26.153Z
+</u:Expires></u:Timestamp></o:Security></s:Header><s:Body><PhotoVerifyBaseResponse xmlns=
+"http://tempuri.org/"><Response i:type="a:PhotoVerifyResponse"
+xmlns:a="http://miteksystems.com/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<a:Errors>
+    <a:Error>
+        <a:ErrorCode>600</a:ErrorCode>
+        <a:FullMessage>Cannot read back.</a:FullMessage>
+        <a:InnerError i:nil="true"/>
+    </a:Error>
+    <a:Error>
+        <a:ErrorCode>602</a:ErrorCode>
+        <a:FullMessage>Cannot read front. Bad image.</a:FullMessage>
+        <a:InnerError>
+            <a:ErrorCode>0</a:ErrorCode>
+            <a:FullMessage>Unable to process image. Please evaluate lighting condition.
+            </a:FullMessage>
+            <a:InnerError i:nil="true"/>
+        </a:InnerError>
+    </a:Error>
+    <a:Error>
+        <a:ErrorCode>607</a:ErrorCode>
+        <a:FullMessage>Unable to compare data. Missing extracted data from Drivers License front
+            and/or back.
+        </a:FullMessage>
+        <a:InnerError i:nil="true"/>
+    </a:Error>
+    <a:Error>
+        <a:ErrorCode>100</a:ErrorCode>
+        <a:FullMessage>No data could be extracted. validation failed.</a:FullMessage>
+        <a:InnerError i:nil="true"/>
+    </a:Error>
+</a:Errors>
+<a:Images />
+<a:Status>Failed</a:Status>
+<a:AddressValidation i:nil="true"/><a:ExtractedData i:nil="true"/><a:ComparisonResult i:nil=
+"true"/>
+</Response></PhotoVerifyBaseResponse></s:Body></s:Envelope>

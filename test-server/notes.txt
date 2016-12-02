@@ -1,0 +1,22 @@
+Questions:
+
+1. How do you interpret a valid DL from a fake?
+2. Should you take both front and back or just front?  What are the trade offs?
+3. When taking DL auto capture at my desk, it said I needed more light so I turned on the flash and it worked.  The docs recommend flash be turned off, not auto.  What is the reason?  A: lots of reflection.  Usually work better with no flash.
+
+
+1. MobileFill our app should ask for both front and back.  Works with either front or back, bar code is always better because it is more reliable.  Old Arizona licenses do not have bar code (you can have a valid license that is 40 years old).  IL 2014 didn't have address in bar code, OH 2014 bar code was encrypted, MN licenses don't have address in bar code.
+
+2. MobileVerify needs front and back, if you don't have a bar code, can't verify.  About 2/3rds have ESF -- code embedded in the graphics and design of the front.  Mitek has license to read the code.  Has data in the code -- license number, DOB.
+
+3. If you have a high res image copy of the license front, it will pass because it is purely graphical.
+
+4. Better picture with auto, but manual can be fine too.  1st gen of product was manual.
+
+1. Is ESF expected (based on when/where)?  If it is, you just check for ESF status. About 2/3rds.
+1.1 Found it, is it good -- gold standard for verification (done)
+1.2 Found it, looks suspicious
+
+2. No ESF, it makes OCR of front with data in barcode on back, and a template check (meaning fields are in the right stop).  Overall data match score of 800 means it is a good license.
+
+MobileMatch: ValidateValue is what you should use from MobileFill

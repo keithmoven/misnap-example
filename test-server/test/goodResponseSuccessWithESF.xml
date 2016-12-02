@@ -1,0 +1,237 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+   <s:Header>
+      <h:Metadata s:mustUnderstand="1" xmlns:h="http://miteksystems.com" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+         <SessionReferenceId xmlns="http://miteksystems.com/">2735a875-4638-4ab6-aee6-19245474724d</SessionReferenceId>
+         <TransactionReferenceId xmlns="http://miteksystems.com/">1000200278</TransactionReferenceId>
+         <XIPVersion xmlns="http://miteksystems.com/">2.1</XIPVersion>
+      </h:Metadata>
+      <o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <u:Timestamp u:Id="_0">
+            <u:Created>2016-08-11T01:35:18.743Z</u:Created>
+            <u:Expires>2016-08-11T01:40:18.743Z</u:Expires>
+         </u:Timestamp>
+      </o:Security>
+   </s:Header>
+   <s:Body>
+      <PhotoVerifyBaseResponse xmlns="http://tempuri.org/">
+         <Response i:type="a:PhotoVerifyAdvancedResponse" xmlns:a="http://miteksystems.com/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:Errors/>
+            <a:Images/>
+            <a:Status>Successful</a:Status>
+            <a:AddressValidation>
+               <a:ConfidenceScore>1000</a:ConfidenceScore>
+               <a:Validated>true</a:Validated>
+               <a:OriginalValue>
+                  <a:Address1>8246 COUNTY ROAD 34</a:Address1>
+                  <a:AddressLine2 i:nil="true"/>
+                  <a:AptNumber i:nil="true"/>
+                  <a:City>DADEVILLE</a:City>
+                  <a:POBox i:nil="true"/>
+                  <a:StateAbbr>AL</a:StateAbbr>
+                  <a:StreetName i:nil="true"/>
+                  <a:StreetNumber i:nil="true"/>
+                  <a:Zip>368534690</a:Zip>
+               </a:OriginalValue>
+               <a:ValidatedValue>
+                  <a:Address1>8246 COUNTY ROAD 34</a:Address1>
+                  <a:AddressLine2/>
+                  <a:AptNumber/>
+                  <a:City>DADEVILLE</a:City>
+                  <a:POBox/>
+                  <a:StateAbbr>AL</a:StateAbbr>
+                  <a:StreetName>COUNTY ROAD 34</a:StreetName>
+                  <a:StreetNumber>8246</a:StreetNumber>
+                  <a:Zip>36853-4690</a:Zip>
+               </a:ValidatedValue>
+               <a:SuggestedAddresses i:nil="true"/>
+            </a:AddressValidation>
+            <a:ExtractedData>
+               <a:Address>
+                  <a:Address1>8246 COUNTY ROAD 34</a:Address1>
+                  <a:AddressLine2/>
+                  <a:AptNumber/>
+                  <a:City>DADEVILLE</a:City>
+                  <a:POBox/>
+                  <a:StateAbbr>AL</a:StateAbbr>
+                  <a:StreetName>COUNTY ROAD 34</a:StreetName>
+                  <a:StreetNumber>8246</a:StreetNumber>
+                  <a:Zip>36853-4690</a:Zip>
+               </a:Address>
+               <a:Class>D</a:Class>
+               <a:Dob>1991-09-13T00:00:00</a:Dob>
+               <a:ExpirationDate>2015-06-25T00:00:00</a:ExpirationDate>
+               <a:Id>1438504</a:Id>
+               <a:IssueDate>2010-09-14T00:00:00</a:IssueDate>
+               <a:Name>
+                  <a:FirstName>KYLE</a:FirstName>
+                  <a:LastName>HERTZ</a:LastName>
+                  <a:MiddleName>ANTWON</a:MiddleName>
+                  <a:Suffix i:nil="true"/>
+               </a:Name>
+               <a:Sex>M</a:Sex>
+               <a:State>
+                  <a:Abbreviation>AL</a:Abbreviation>
+                  <a:Name>Alabama</a:Name>
+               </a:State>
+            </a:ExtractedData>
+            <a:ComparisonResult>
+               <a:Comparison>
+                  <a:Address1>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>8246 COUNTY ROAD 34</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>8246 COUNTY ROAD 34</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>8246 COUNTY ROAD 34</a:Value>
+                  </a:Address1>
+                  <a:Address2>
+                     <a:ExtractedValues/>
+                     <a:FieldComparisonScore i:nil="true"/>
+                     <a:Value/>
+                  </a:Address2>
+                  <a:City>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>DADEVILLE</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>DADEVILLE</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>DADEVILLE</a:Value>
+                  </a:City>
+                  <a:Dob>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>1991-09-13T00:00:00</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>1991-09-13T00:00:00</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>1991-09-13T00:00:00</a:Value>
+                  </a:Dob>
+                  <a:ExpirationDate>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>2015-06-25T00:00:00</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>2015-06-25T00:00:00</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>2015-06-25T00:00:00</a:Value>
+                  </a:ExpirationDate>
+                  <a:FirstName>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>KYLE</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>KYLE</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>KYLE</a:Value>
+                  </a:FirstName>
+                  <a:Id>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>1438504</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>1438504</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>1438504</a:Value>
+                  </a:Id>
+                  <a:IssueDate>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>2010-09-14T00:00:00</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                        <a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                           <a:ExtractedValue>2010-09-14T00:00:00</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfNullableOfdateTime5F2dSckg>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>2010-09-14T00:00:00</a:Value>
+                  </a:IssueDate>
+                  <a:LastName>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>HERTZ</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>HERTZ</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>HERTZ</a:Value>
+                  </a:LastName>
+                  <a:State>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>AL</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>AL</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>AL</a:Value>
+                  </a:State>
+                  <a:Zip>
+                     <a:ExtractedValues>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>368534690</a:ExtractedValue>
+                           <a:Source>PDF417 String</a:Source>
+                        </a:ExtractedFieldOfstring>
+                        <a:ExtractedFieldOfstring>
+                           <a:ExtractedValue>36853-4690</a:ExtractedValue>
+                           <a:Source>Drivers License Front</a:Source>
+                        </a:ExtractedFieldOfstring>
+                     </a:ExtractedValues>
+                     <a:FieldComparisonScore>1000</a:FieldComparisonScore>
+                     <a:Value>368534690</a:Value>
+                  </a:Zip>
+               </a:Comparison>
+               <a:DataMatchScore>1000</a:DataMatchScore>
+            </a:ComparisonResult>
+            <a:NameResult i:nil="true"/>
+            <a:Verification>
+               <a:ESFDob>9/13/1991 12:00:00 AM</a:ESFDob>
+               <a:ESFLicenseId>1438504</a:ESFLicenseId>
+               <a:ESFState>AL</a:ESFState>
+               <a:VerificationResult>Valid</a:VerificationResult>
+            </a:Verification>
+         </Response>
+      </PhotoVerifyBaseResponse>
+   </s:Body>
+</s:Envelope>

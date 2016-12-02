@@ -1,0 +1,66 @@
+<soapenv:Envelope xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:mit="http://miteksystems.com/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+    <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><wsse:UsernameToken wsu:Id="UsernameToken-A1A4C5EE6958E97AC814744824386772"><wsse:Username>service@moven.com</wsse:Username><wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Speedway@44</wsse:Password><wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">DpbZ5S69vKUISIKswBp5fQ==</wsse:Nonce><wsu:Created>2016-09-21T18:27:18.676Z</wsu:Created></wsse:UsernameToken></wsse:Security>
+        <mit:MibiDataHeader>
+            <!--Optional:-->
+            <mit:MibiData>${mibiData}</mit:MibiData>
+        </mit:MibiDataHeader>
+        <mit:Metadata>
+            <!--Optional:-->
+            <mit:ApplicationToken>Su2anAvNemo</mit:ApplicationToken>
+            <!--Optional:-->
+            <mit:SessionReferenceId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <!--Optional:-->
+            <mit:TenantReference>147</mit:TenantReference>
+            <!--Optional:-->
+            <mit:Version>1.0</mit:Version>
+        </mit:Metadata>
+        <mit:DeviceMetaData>
+            <!--Optional:-->
+            <mit:Browser xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <!--Optional:-->
+            <mit:Device xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <!--Optional:-->
+            <mit:OperatingSystem xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <!--Optional:-->
+            <mit:RawData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </mit:DeviceMetaData>
+    </soapenv:Header>
+    <soapenv:Body>
+        <tem:PhotoVerifyBaseRequest>
+            <!--Optional:-->
+            <tem:DocumentRequest xsi:type="mit:PhotoVerifyRequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <!--Optional:-->
+                <mit:ResponseImageTypes>
+                    <!--Zero or more repetitions:-->
+                    <arr:string xsi:nil="true"/>
+                </mit:ResponseImageTypes>
+                <!--Optional:-->
+                <mit:BackImage>
+                    <!--Optional:-->
+                    <mit:Hints>
+                        <!--Zero or more repetitions:-->
+                        <arr:KeyValueOfstringstring>
+                            <arr:Key>PDF417</arr:Key>
+                            <arr:Value>${driversLicenseBack}</arr:Value>
+                        </arr:KeyValueOfstringstring>
+                    </mit:Hints>
+                    <!--Optional:-->
+                    <mit:ImageData xsi:nil="true"/>
+                </mit:BackImage>
+                <!--Optional:-->
+                <mit:FrontImage>
+                    <!--Optional:-->
+                    <mit:Hints>
+                        <!--Zero or more repetitions:-->
+                    </mit:Hints>
+                    <!--Optional:-->
+                    <mit:ImageData>${driversLicenseFront}</mit:ImageData>
+                </mit:FrontImage>
+                <!--Optional:-->
+                <!--mit:IssueDate>2009-02-07</mit:IssueDate-->
+                <!--Optional:-->
+                <!--mit:StateAbbr>CO</mit:StateAbbr-->
+            </tem:DocumentRequest>
+        </tem:PhotoVerifyBaseRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

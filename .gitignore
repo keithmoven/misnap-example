@@ -1,0 +1,7 @@
+platforms
+plugins
+.DS_Store
+/.idea
+test-server/node-modules
+/test-server/.idea
+/test-server/node_modules
