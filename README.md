@@ -32,9 +32,11 @@ SDK.  You can manually add the embedded binary in XCode.  In the project navigat
 Embedded Binaries, add MobileFlow.framework
 1. For a permanent solution / hack, see [this StackOverflow question](http://stackoverflow.com/questions/24993752/os-x-framework-library-not-loaded-image-not-found)
 
+Another error you might see is:
 
     ld: library not found for -lMiSnap
     clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    
 
 1. Remove libMiSnap.a from "Linked Frameworks and Libraries"
 1. From the Project Navigator in xCode, drag MiSnap/Frameworks/libMiSnap.a onto "Linked Frameworks and Libraries"
